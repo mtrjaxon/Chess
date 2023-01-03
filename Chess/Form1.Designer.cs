@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            this.loopTimer = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // Form1
@@ -37,9 +39,8 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1252, 625);
             this.ForeColor = System.Drawing.Color.Lime;
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
             this.Name = "Form1";
-            this.Text = " ANTICHEAT ACTIVE (CHESS++) | BETA";
+            this.Text = "CHESS++ | BETA";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
@@ -47,6 +48,8 @@
         }
 
         #endregion
+
+        private System.Windows.Forms.Timer loopTimer;
     }
 }
 

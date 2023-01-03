@@ -17,7 +17,7 @@ namespace Chess
             InitializeComponent();
         }
 
-        private void Hash_Load(object sender, EventArgs e)
+        public void Hash_Load(object sender, EventArgs e)
         {
             Hash mainForm = new Hash();
             this.Location = new Point(0,0);
